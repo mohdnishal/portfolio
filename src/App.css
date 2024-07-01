@@ -1,38 +1,327 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2, p {
+  margin: 0;
+  padding: 0.5em 0;
+}
+.sticky-navbar {
+  background-color: #000000;
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
 }
 
-.App-header {
-  background-color: #282c34;
+.navbar-brand-custom {
+  margin-left: 20px;
+  color: white;
+  font-weight: 800 !important;
+  font-size: 24px !important;
+}
+
+.navbar-nav-custom {
+  margin-left: auto;
+}
+
+.nav-link-custom {
+  color: white !important;
+  font-weight: bold;
+  font-size: 20px !important;
+  margin-right: 60px;
+}
+
+.nav-link-custom:hover {
+  color: #f0b00e !important; /* Optional: Add hover effect */
+}
+.about-section, .projects-section{
+  background-color: #000000;
+  color: white;
   min-height: 100vh;
+  padding: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.title-para {
+  font-size: 50px;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #ffbd39;
+}
+
+.name-title {
+  font-size: 5em;
+  margin-bottom: 0.5em;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 800;
+}
+
+.name-title strong {
+  color: #ffbd39;
+}
+
+.name-title-desc {
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: -35px;
+}
+
+.profile-image {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border: 5px solid #fff;
+  opacity: 1;
+}
+
+.about-title,.projects-title,.contact-titles {
+  font-size: 4em;
+  font-family: 'Poppins', Arial, sans-serif;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.about-text {
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999999;
+}
+
+.download-cv-button {
+  background-color: #e0a923;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+.download-cv-button:hover {
+  background-color: #d1a223;
+}
+
+.resume-section {
+  background-color: #000000;
+  color: white;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-title {
+  font-size: 4em;
+  font-family: 'Poppins', Arial, sans-serif;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.education-card, .project-card {
+  background-color: #1c1f22;
+  border: none;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.education-card .card-title {
+  font-size: 1.5em;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.education-card .card-subtitle {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999999;
+}
+
+.education-card .card-text {
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999999;
+}
+.project-card:hover {
+  background-color: #f0b00e;
+  color: #000000;
+  cursor: pointer;
+}
+
+.project-card a {
+  color: white;
+}
+.project-card {
+  background-color: #1c1f22;
+  transition: background-color 0.3s;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-card:hover {
+  background-color: #f0b00e;
+}
+
+.project-card .card-title {
+  font-weight: 700;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.project-card .card-text {
+  color: #999999;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.project-card .card-link {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.project-card .card-link:hover {
+  text-decoration: underline;
+}
+.contact-section {
+  background-color: #000000;
+  color: #ffffff; /* Text color */
+  padding: 50px 0; /* Adjust padding as needed */
+}
+
+.contact-icons-row {
+  margin-top: 30px; /* Margin above the icons row */
+}
+.linkaddress
+{
+  text-decoration: none;
+  color: #999999;
+}
+.rounded-icon {
+  background-color: #1c1f22; /* Icon background color */
+  color: #e0a923;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Rounded shape */
+  margin: auto; /* Center the icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; /* Spacing between icons and text */
+}
+
+.icon-text {
+  font-size: 1.2em; /* Adjust text size */
+  font-weight: 500;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.form-control {
+  height: 38px;
+  font-size: 1em;
+  width: 50%;
+}
+
+.textarea-control {
+  min-height: 150px;
+  font-size: 1em;
+  width: 50%;
+}
+
+.submit-button {
+  background-color: #e0a923;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #c6901c;
+}
+.footer-section {
+  background-color: #000000;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.footer-summary {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-icon {
+  margin: 0 15px;
+  color: white;
+}
+
+.footer-icon:hover {
+  color: #f0b00e; /* Change to your desired hover color */
+}
+.copyright-text {
+  color: white;
+  margin-top: 15px;
+  font-size: 14px;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.scroll-to-top:hover {
+  background-color: #f0b00e; /* Change to your desired hover color */
+}
+@media (max-width: 767px) {
+  .name-title {
+    font-size: 3em;
   }
-  to {
-    transform: rotate(360deg);
+
+  .name-title-desc {
+    font-size: 1.5em;
+  }
+
+  .about-title, .resume-title {
+    font-size: 2.5em;
+  }
+
+  .about-text {
+    font-size: 1.2em;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 250px;
+  }
+
+  .education-card .project-card {
+    margin-bottom: 20px;
   }
 }
