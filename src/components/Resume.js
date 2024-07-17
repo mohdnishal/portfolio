@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import '../App.css';
+import Resumes from '../assets/Resume.pdf';
 
 const Resume = () => {
   const educationDetails = [
@@ -52,7 +53,8 @@ const Resume = () => {
                 </Col>
               ))}
               <div className="text-center w-100 mt-4">
-                <button className="download-cv-button" href="/path/to/your/cv.pdf" download>DOWNLOAD CV</button>
+              <a className="download-cv-button" style={{textDecoration:'none'}} href={Resumes} download>DOWNLOAD CV</a>
+                {/* <button className="download-cv-button" href="/path/to/your/cv.pdf" download>DOWNLOAD CV</button> */}
               </div>
             </Row>
           </Col>

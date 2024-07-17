@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import '../App.css';
-import Profile from '../assets/DSC_0018.jpg';
+import Profile from '../assets/profile.jpg';
+import Resumes from '../assets/Resume.pdf';
 
 const About = () => {
   return (
@@ -29,7 +30,8 @@ const About = () => {
                 Hello! I'm Mohammed Nishal, a passionate software developer. I specialize in creating dynamic and beautiful web pages. A motivated and dedicated final-year Computer Science and Engineering student seeking an opportunity to apply technical skills and contribute to a dynamic team. Passionate about software development and problem-solving.
               </p>
               <div className="text-center">
-                <button className="download-cv-button" href="/path/to/your/cv.pdf" download>DOWNLOAD CV</button>
+                <a className="download-cv-button" style={{textDecoration:'none'}} href={Resumes} download>DOWNLOAD CV</a>
+                {/* <button className="download-cv-button" href="/path/to/your/cv.pdf" download></button> */}
               </div>
             </Col>
           </Row>
