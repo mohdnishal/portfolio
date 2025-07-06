@@ -1,0 +1,53 @@
+{
+    "project":[
+        {
+      "icon": "/img/horizon.jpg",
+      "title": "HORIZON",
+      "description": "Horizon is an innovative machine learning-powered platform designed to guide students in selecting the best colleges and universities for their international education. It provides personalized recommendations by analyzing academic profiles, career objectives, and future aspirations, assisting users in making informed decisions about their academic journey.",
+      "liveDemo": "",
+      "github": "https://github.com/Sreelakshmimnair/Horizon"
+    },
+    {
+      "icon": "/img/hostelmate.png",
+      "title": "HOSTEL-MATE",
+      "description": "Developed a comprehensive hostel management system tailored for the Ladies Hostel at RIT, fully automating hostel operations. Focused on creating an intuitive and visually appealing user interface, ensuring an engaging and accessible experience for both residents and management.",
+      "liveDemo": "https://hostel-mate-frontend.vercel.app/",
+      "github": "https://github.com/mohdnishal/hostel-mate-frontend"
+    },
+    {
+      "icon": "/img/neuronile.png",
+      "title": "NEURONILE",
+      "description": "Developed responsive user interfaces using React.js with a mobile-first approach, leveraging CSS for visually engaging and accessible layouts. Implemented fluid design principles and media queries to ensure consistent user experiences across devices. Integrated Nodemailer in the backend to enable seamless email functionality for form submissions and notifications, enhancing overall user interaction and engagement.",
+      "liveDemo": "https://www.neuronile.com/",
+      "github": ""
+    },
+    {
+      "icon": "/img/rex.jpg",
+      "title": "REX 4.0",
+      "description": "A responsive and visually dynamic website created for REX 4.0 that offers seamless navigation and real-time event updates.The site was built with a strong emphasis on accessibility, user engagement, and delivering an intuitive, interactive experience for users.",
+      "liveDemo": "",
+      "github": ""
+    },
+    {
+      "icon": "/img/deltron.png",
+      "title": "DELTRON",
+      "description": "Implemented responsive layouts using fluid design principles, media queries, and mobile-first strategies, ensuring a user-friendly experience across multiple devices. The focus was on creating an accessible and visually appealing interface that prioritizes user engagement and satisfaction.",
+      "liveDemo": "https://www.deltron.qa/",
+      "github": ""
+    }
+    ],
+    "langagues":[
+        { "icon": "/img/css.svg", "name": "CSS3" },
+        { "icon": "/img/python.svg", "name": "Python" },
+        { "icon": "/img/html.svg", "name": "HTML" },
+        { "icon": "/img/sql.svg", "name": "SQL" },
+        { "icon": "/img/react.svg", "name": "React JS" },
+        { "icon": "/img/js.svg", "name": "JavaScript" }
+        
+    ],
+    "tools":[
+        { "icon": "/img/vscode.svg", "name": "VS Code" },
+        { "icon": "/img/figma.svg", "name": "Figma" },
+        { "icon": "/img/github.svg", "name": "GitHub" }
+    ]
+}
