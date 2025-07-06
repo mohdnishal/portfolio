@@ -1,7 +1,7 @@
 import React from 'react';
 import SkillCard from '../components/Skillcard/SkillCard';
 import './Home.css';
-import profile from '../assets/profile.png';
+import profile from '../assets/profile1.webp';
 import About from '../components/about/About';
 import {Link} from 'react-router-dom'
 
@@ -28,8 +28,7 @@ const Home = () => {
               <div className="profile-img">
                 <img src={profile} alt="Mohammed Nishal" className="profile-photo" />
               </div>
-              <h3>Full Stack Developer</h3>
-              <p>React • Node.js • MongoDB</p>
+            
             </div>
           </div>
         </div>

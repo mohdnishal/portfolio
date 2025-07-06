@@ -1,6 +1,5 @@
 .contact {
-  padding: 2rem 0;
-  /* background: var(--bg-secondary); */
+  padding: 2rem 1rem; /* Add horizontal padding for mobile view */
 }
 
 .contact-content {
@@ -52,16 +51,60 @@
   align-items: center;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .contact-icon {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(135deg, var(--primary-color));
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 1.25rem;
+}
+
+.contact-label {
+  color: #f9fafb;
+}
+
+/* 📱 Responsive for tablets and smaller screens */
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr; /* Stack vertically */
+    gap: 2rem;
+  }
+
+  .contact {
+    padding: 2rem 1rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .contact-info {
+    padding: 0;
+  }
+}
+
+/* 📱 Extra small screens */
+@media (max-width: 480px) {
+  .form-group input,
+  .form-group textarea {
+    padding: 0.65rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .contact-item {
+    gap: 0.75rem;
+  }
 }

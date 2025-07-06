@@ -64,15 +64,15 @@ const Contact = () => {
           <div className="contact-info">
             <div className="contact-item">
               <div className="contact-icon"><IoMdMail /></div>
-              <div><h4>Email</h4><p>nishalutd@gmail.com</p></div>
+              <div className='contact-label'><h4>Email</h4><p>nishalutd@gmail.com</p></div>
             </div>
             <div className="contact-item">
               <div className="contact-icon"><IoIosCall /></div>
-              <div><h4>Phone</h4><p>+91 9946158519</p></div>
+              <div className='contact-label'><h4>Phone</h4><p>+91 9946158519</p></div>
             </div>
             <div className="contact-item">
               <div className="contact-icon"><FaLocationCrosshairs /></div>
-              <div><h4>Kondotty, Malappuram</h4><p>Kerala, India</p></div>
+              <div className='contact-label'><h4>Kondotty, Malappuram</h4><p>Kerala, India</p></div>
             </div>
           </div>
         </div>

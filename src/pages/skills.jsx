@@ -11,7 +11,7 @@ const Skills = () => {
         <h2 className="section-title">Technical Skills</h2>
         <div className="about-content">
           <div>
-            <h3>Languages</h3>
+            <h2 className='heading'>Languages</h2>
             <div className="skills-grid">
               {data.langagues.map((skill, index) => (
                 <SkillCard key={index} icon={skill.icon} name={skill.name} />
@@ -19,7 +19,7 @@ const Skills = () => {
             </div>
           </div>
           <div>
-            <h3>Developer Tools & Technologies</h3>
+            <h2 className='heading'>Developer Tools & Technologies</h2>
             <div className="skills-grid">
               {data.tools.map((skill, index) => (
                 <SkillCard key={index} icon={skill.icon} name={skill.name} />
