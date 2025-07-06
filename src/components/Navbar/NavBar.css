@@ -116,7 +116,8 @@ nav {
   .nav-links.open {
     max-height: 300px; /* enough to show all links */
     padding: 1rem 0;
-    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
+    background-color: #27282a;
   }
 
   .nav-links li {
